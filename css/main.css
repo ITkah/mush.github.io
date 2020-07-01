@@ -589,12 +589,10 @@
   display: block;
   width: 49px;
   height: 49px;
-  background: url("../img/about/about-sprite.png") -10px -84px; }
-  @media (max-width: 576px) {
-    .bg_networking {
-      position: relative;
-      top: -2.5px;
-      right: -1px; } }
+  background: url("../img/about/about-sprite.png") -10px -84px;
+  position: relative;
+  top: -2.5px;
+  right: -1px; }
 
 .bg_settings {
   display: block;

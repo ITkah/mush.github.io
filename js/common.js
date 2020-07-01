@@ -1,2 +1,3 @@
-console.log("hello");
-console.log("hello");
+$('.phone').on('input', function() {
+    $(this).val($(this).val().replace(/[A-Za-zА-Яа-яЁё]/, ''))
+});
