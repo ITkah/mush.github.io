@@ -1,0 +1,199 @@
+.title_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 9;
+}
+
+.title_xl {
+    text-transform: uppercase;
+    letter-spacing: .72px;
+    color: #4b4a4a;
+    display: block;
+    text-align: center;
+    border-radius: 20px;
+    padding: 0 20px;
+    font: 2.25rem "Bold";
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .18);
+    background: rgba(255,166,146,.79);
+    @media (max-width: 1280px) {
+        font: 2rem "Bold";
+    }
+    @media (max-width: 576px) {
+        font: 1.5rem "Bold";
+        padding: 0 10px;
+    }
+}
+
+.section_pretitle {
+    text-align: center;
+    color: #4b4a4a;
+    letter-spacing: .48px;
+    font: 1.5rem "Regular";
+    margin-bottom: 55px;
+    position: relative;
+    z-index: 9;
+    @media (max-width: 1280px) {
+        margin-bottom: 40px;
+        font-size: 1.25rem;
+    }
+    @media (max-width: 768px) {
+        margin-bottom: 30px;
+    }
+    @media (max-width: 576px) {
+        margin-bottom: 25px;
+        font-size: 1.1rem;
+    }
+}
+
+.btn_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 9;
+    .btn_red {
+        padding: 15px;
+        border: 2px solid #f18d75;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, .18);
+        border-radius: 10px;
+        color: #e94a25;
+        letter-spacing: .32px;
+        font: 1rem "Medium";
+        transition: .3s;
+        &:hover {
+            background: #e94a25;
+            color: #fff;
+            border-color: #e94a25;
+        }
+        @media (max-width: 380px) {
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.btn_dark {
+    padding: 15px;
+    background: #e94a25;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .18);
+    border-radius: 10px;
+    color: #fff;
+    letter-spacing: .32px;
+    font: 1rem "Medium";
+    transition: .3s;
+    border: none;
+    &:hover {
+        box-shadow: none;
+    }
+    @media (max-width: 380px) {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
+
+.input_box {
+    width: 100%;
+    margin-bottom: 15px;
+    input,textarea {
+        border-radius: 10px;
+        background: #fff;
+        padding: 20px 15px;
+        border: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, .18);
+        width: 100%;
+        box-sizing: border-box;
+        font: .87rem "Regular";
+        color: #4b4a4a;
+        @media (max-width: 990px) {
+            padding: 15px;
+        }
+    }
+    textarea {
+        height: 100px;
+    }
+    ::-webkit-input-placeholder {
+        color: #4b4a4a;
+        letter-spacing: .28px;
+        opacity: .75;
+        font: .87rem "Regular";
+    }
+    ::-moz-placeholder {
+        color: #4b4a4a;
+        letter-spacing: .28px;
+        opacity: .75;
+        font: .87rem "Regular";
+    }
+    :-moz-placeholder {
+        color: #4b4a4a;
+        letter-spacing: .28px;
+        opacity: .75;
+        font: .87rem "Regular";
+    }
+    :-ms-input-placeholder {
+        color: #4b4a4a;
+        letter-spacing: .28px;
+        opacity: .75;
+        font: .87rem "Regular";
+    }
+}
+
+.checkbox {
+    margin-bottom: 30px;
+    @media (max-width: 576px) {
+        margin-bottom: 20px;
+    }
+}
+
+.checkbox input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 20px;
+    letter-spacing: .2px;
+    font: .7rem "Regular";
+    color: #5d5858;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+}
+
+.checkbox label::before{
+    height: 11px;
+    width: 11px;
+    border: 1px solid;
+    left: 0;
+    top: 0;
+}
+
+
+.checkbox label::after {
+    height: 3px;
+    width: 6px;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    transform: rotate(-45deg);
+    left: 3px;
+    top: 4px;
+}
+
+.checkbox input[type="checkbox"] + label::after {
+    content: none;
+}
+
+.checkbox input[type="checkbox"]:checked + label::after {
+    content: "";
+}

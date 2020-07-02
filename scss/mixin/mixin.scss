@@ -1,0 +1,19 @@
+@mixin link-hover {
+    transition: .3s;
+    &:hover {
+        color: #ff4a1e;
+    }
+}
+
+@mixin backgroun-white {
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .18);
+    @media (max-width: 990px) {
+        grid-gap: 30px;
+        border-radius: 40px;
+    }
+    @media (max-width: 576px) {
+        border-radius: 25px;
+    }
+}
