@@ -84,7 +84,9 @@
                             </div>
                             <div class="smm_example_wrap">
                                 <div class="smm_img">
-                                    <img src="img/smm/smm-img.png" alt="smm">
+                                    <video poster="img/smm/smm-img.png" class="smm_img">
+                                        <source src="img/vidos.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                                    </video>
                                 </div>
                                 <ul class="smm_example_box">
                                     <li>Увеличение заявок, продаж</li>
@@ -384,5 +386,16 @@
         <script src="js/libs/magnific-popup.min.js"></script>
         <script src="js/libs/slick.min.js"></script>
         <script src="js/common.js"></script>
+        <script>
+            $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+                disableOn: 700,
+                type: 'iframe',
+                mainClass: 'mfp-fade',
+                removalDelay: 160,
+                preloader: false,
+
+                fixedContentPos: false
+            });
+        </script>
     </body>
 </html>
