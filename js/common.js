@@ -11,5 +11,6 @@ $(document).ready(function() {
     $(".smm_img").on("click", function(){
         $(this).attr("controls","")[0].play();
     });
+
     
 });
