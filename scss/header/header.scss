@@ -70,8 +70,75 @@
 
 .header_btn_box {
     cursor: pointer;
+    height: 35px;
+    width: 35px;
     svg {
         height: 35px;
         width: 35px;
+    }
+}
+
+.menu_header {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header {
+    position: relative;
+    z-index: 99;
+}
+
+nav {
+    position: absolute;
+    background: #fff;
+    right: 0;
+    display: none;
+    top: 45px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.18);
+    ul {
+        padding: 10px 15px;
+        li {
+            min-width: 140px;
+            padding: 3px 0;
+            display: block;
+            position: relative;
+        }
+        a {
+            color: #4a4949;
+            font: 1rem "Regular";
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .arrow_mob {
+        height: 10px;
+        width: 10px;
+        position: absolute;
+        right: 0;
+        top: 10px;
+        transform: rotate(180deg);
+        &::after {
+            content: '';
+            background: url(../img/icon/arr.svg);
+            background-size: 10px 10px;
+            height: 10px;
+            width: 10px;
+            display: block;
+        }
+    }
+    .sub-menu {
+        display: none;
+        padding: 5px 5px 0 5px;
+        li {
+            padding: 2px 0;
+            min-width: 100%;
+        }
+        li:last-child {
+            padding-bottom: 0;
+        }
     }
 }

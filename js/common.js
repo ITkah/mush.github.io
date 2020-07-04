@@ -12,5 +12,20 @@ $(document).ready(function() {
         $(this).attr("controls","")[0].play();
     });
 
+    $(".header_btn_box").on("click", function(){
+        $("nav").slideToggle(200);
+    });
+        
+    $("nav ul li").each(function() {
+        this_li = $(this);
+        if ($(this_li).find("ul").length > 0) {
+        $(this_li).append('<div class="arrow_mob"></div>')
+        }
+    });
+
+    $('.arrow_mob').click(function() {
+        $(this).siblings("a").toggleClass("orange");
+        $(this).toggleClass("active-elem").closest('li').find('ul').eq(0).slideToggle(); 
+    });
     
 });
