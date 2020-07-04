@@ -33,17 +33,34 @@
     a {
         display: block;
         margin-right: 10px;
+        position: relative;
         svg {
             height: 30px;
             width: auto;
             transition: .3s;
-            &:hover {
-                transform: scale(1.1);
-            }
             @media (max-width: 576px) {
                 height: 28px;
             }
         }
+        &:hover {
+            .active-icon {
+                opacity: 1;
+                z-index: 9;
+            }
+            .disabled-icon {
+                opacity: 0;
+            }
+        }
+    }
+    .active-icon {
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        transition: .3s;
+    }
+    .disabled-icon {
+        opacity: 1;
+        transition: .3s;
     }
     a:nth-child(2) {
         margin-right: 15px;

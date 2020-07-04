@@ -101,9 +101,9 @@
         grid-template-columns: 1fr;
     }
     .smm_img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
     }
     img {
         max-width: 100%;
@@ -459,4 +459,28 @@
     display: block;
     width: 44px; height: 43px;
     background: url('../img/smm/sprite-smm.png') -10px -10px;
+}
+
+.mfp-fade.mfp-bg {
+	opacity: 0;
+}
+
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: .8;
+}
+
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+}
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
 }

@@ -5,27 +5,31 @@
     margin-bottom: 20px;
     position: relative;
     z-index: 9;
+    .title_xl,h1,h2,h3,h4,h5,h6 {
+        text-transform: uppercase;
+        letter-spacing: .72px;
+        color: #4b4a4a;
+        display: block;
+        text-align: center;
+        font: 2.25rem "Bold";
+        span {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, .18);
+            background: rgba(255,166,146,.79);
+            margin-bottom: 10px;
+            display: inline-block;
+            border-radius: 20px;
+            padding: 0 20px;
+        }
+        @media (max-width: 1280px) {
+            font: 2rem "Bold";
+        }
+        @media (max-width: 576px) {
+            font: 1.25rem "Bold";
+            padding: 0 10px;
+        }
+    }
 }
 
-.title_xl {
-    text-transform: uppercase;
-    letter-spacing: .72px;
-    color: #4b4a4a;
-    display: block;
-    text-align: center;
-    border-radius: 20px;
-    padding: 0 20px;
-    font: 2.25rem "Bold";
-    box-shadow: 0 4px 6px rgba(0, 0, 0, .18);
-    background: rgba(255,166,146,.79);
-    @media (max-width: 1280px) {
-        font: 2rem "Bold";
-    }
-    @media (max-width: 576px) {
-        font: 1.5rem "Bold";
-        padding: 0 10px;
-    }
-}
 
 .section_pretitle {
     text-align: center;
