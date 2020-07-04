@@ -116,10 +116,11 @@ nav {
     }
     .arrow_mob {
         height: 10px;
+        cursor: pointer;
         width: 10px;
         position: absolute;
         right: 0;
-        top: 10px;
+        top: 9px;
         transform: rotate(180deg);
         &::after {
             content: '';
