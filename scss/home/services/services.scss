@@ -19,30 +19,33 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 80px;
-    @media (max-width: 990px) {
-        grid-gap: 30px;
+    @media (max-width: 1200px) {
+        grid-gap: 20px;
     }
     .services_box:first-child {
         .services_img {
-            img {
+            @media (max-width: 1200px) {
+                margin-top: 5px;
+            }
+            video {
                 left: -265px;
                 @media (max-width: 1200px) {
-                    left: -460px;
-                }
-                @media (max-width: 990px) {
                     left: 0;
                 }
             }
         }
     }
     .services_box:nth-child(2) {
+        @media (max-width: 1200px) {
+            flex-direction: column-reverse;
+        }
         .services_img {
-            img {
+            @media (max-width: 1200px) {
+                margin-top: 15px;
+            }
+            video {
                 right: -265px;
                 @media (max-width: 1200px) {
-                    right: -500px;
-                }
-                @media (max-width: 990px) {
                     right:  0;
                 }
             }
@@ -50,12 +53,9 @@
     }
     .services_box:last-child {
         .services_img {
-            img {
+            video {
                 left:  -265px;
                 @media (max-width: 1200px) {
-                    left: -500px;
-                }
-                @media (max-width: 990px) {
                     left: 0;
                 }
             }
@@ -67,6 +67,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 1200px) {
+        flex-direction: column;
+    }
     @media (max-width: 990px) {
         flex-direction: column;
     }
@@ -75,19 +78,24 @@
         height: 370px;
         width: 500px;
         @media (max-width: 1200px) {
-            width: 600px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0 0 0;
         }
-        @media (max-width: 990px) {
-            display: none;
-        }
-        img {
+        video {
             width: 765px;
             height: 370px;
+            border-radius: 15px;
             position: absolute;
             object-fit: contain;
             @media (max-width: 1200px) {
-                width: 700px;
-                height: 340px;
+                width: 100%;
+                height: auto;
+                position: relative;
+                box-sizing: border-box;
             }
         }
     }

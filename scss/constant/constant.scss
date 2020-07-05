@@ -40,8 +40,8 @@ p {
 
 
 .margin {
-    margin-bottom: 120px;
-    @media (max-width: 990px) {
+    margin-bottom: 110px;
+    @media (max-width: 1400px) {
         margin-bottom: 80px;
     }
     @media (max-width: 576px) {
@@ -58,6 +58,7 @@ p {
 }
 
 button,
+video,
 input,
 select,
 textarea,

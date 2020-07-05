@@ -192,6 +192,9 @@
     }
     .container {
         padding: 100px 0;
+        @media (max-width: 1400px) {
+            padding: 70px 0;
+        }
         @media (max-width: 990px) {
             padding: 60px 0;
         }
