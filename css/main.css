@@ -1312,6 +1312,9 @@ nav {
     @media (max-width: 990px) {
       .smm_tabs .container {
         padding: 60px 0; } }
+    @media (max-width: 768px) {
+      .smm_tabs .container {
+        padding: 40px 0; } }
   @media (max-width: 1200px) {
     .smm_tabs .tabs {
       width: 100%; } }
@@ -1326,6 +1329,9 @@ nav {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-bottom: 35px; }
+    @media (max-width: 990px) {
+      .smm_tabs .title_box {
+        margin: 0; } }
     .smm_tabs .title_box .title_xl:first-child {
       margin-bottom: 10px; }
       @media (max-width: 990px) {
@@ -1366,7 +1372,7 @@ nav {
       @media (max-width: 990px) {
         .smm_tabs .smm_tabs_container .smm_btn_wrap {
           margin-top: 40px; } }
-      @media (max-width: 400px) {
+      @media (max-width: 420px) {
         .smm_tabs .smm_tabs_container .smm_btn_wrap {
           width: 100%; } }
   .smm_tabs .tabs__caption {
@@ -2428,6 +2434,9 @@ nav {
     @media (max-width: 990px) {
       .decision .container {
         padding: 60px 0; } }
+    @media (max-width: 768px) {
+      .decision .container {
+        padding: 40px 0; } }
   .decision .decision_wrap {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -3152,6 +3161,11 @@ nav {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 20px;
   position: relative;
   z-index: 9; }
@@ -3159,7 +3173,23 @@ nav {
     text-transform: uppercase;
     letter-spacing: .72px;
     color: #4b4a4a;
-    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
     font: 2.25rem "Bold"; }
     .title_box .title_xl span, .title_box h1 span, .title_box h2 span, .title_box h3 span, .title_box h4 span, .title_box h5 span, .title_box h6 span {

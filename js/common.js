@@ -8,8 +8,10 @@ $(document).ready(function() {
         $(this).addClass('active').siblings().removeClass('active').closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
     });
 
-    $(".smm_img").on("click", function(){
-        $(this).attr("controls","")[0].play();
+    
+    $(".vidos").on("click", function(){
+        $(this).attr("controls","");
+        $(this)[0].play();
     });
 
     $(".header_btn_box").on("click", function(){

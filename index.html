@@ -494,75 +494,75 @@
         <script>
               $(function() {
   
-  var $video = $('.vidos-1');
-  var $window = $(window);
+                var $video = $('.vidos-1');
+                var $window = $(window);
 
-  $window.scroll(function() {
+                $window.scroll(function() {
 
-    var $topOfVideo = $video.offset().top;
-    var $bottomOfVideo = $video.offset().top + $video.outerHeight();
+                    var $topOfVideo = $video.offset().top;
+                    var $bottomOfVideo = $video.offset().top + $video.outerHeight();
 
-    var $topOfScreen = $window.scrollTop();
-    var $bottomOfScreen = $window.scrollTop() + $window.innerHeight();
-    
-    if(($bottomOfScreen > $bottomOfVideo) && ($topOfScreen < $topOfVideo)){
-      $video[0].play();
-      $video.attr("controls","")[0].play();
-    } else {
-      $video[0].pause();
-    }
-    
-  });
-  
-});
+                    var $topOfScreen = $window.scrollTop();
+                    var $bottomOfScreen = $window.scrollTop() + $window.innerHeight();
+                    
+                    if(($bottomOfScreen > $bottomOfVideo) && ($topOfScreen < $topOfVideo)){
+                        $video[0].play();
+                        $video.attr("controls","");
+                    } else {
+                        $video[0].pause();
+                    }
+                    
+                });
+                
+                });
 
-$(function() {
+                $(function() {
 
-  var $video = $('.vidos-2');
-  var $window = $(window);
+                    var $video = $('.vidos-2');
+                    var $window = $(window);
 
-  $window.scroll(function() {
+                    $window.scroll(function() {
 
-    var $topOfVideo = $video.offset().top;
-    var $bottomOfVideo = $video.offset().top + $video.outerHeight();
+                        var $topOfVideo = $video.offset().top;
+                        var $bottomOfVideo = $video.offset().top + $video.outerHeight();
 
-    var $topOfScreen = $window.scrollTop();
-    var $bottomOfScreen = $window.scrollTop() + $window.innerHeight();
-    
-    if(($bottomOfScreen > $bottomOfVideo) && ($topOfScreen < $topOfVideo)){
-      $video[0].play();
-      $video.attr("controls","")[0].play();
-    } else {
-      $video[0].pause();
-    }
-    
-  });
-  
-});
+                        var $topOfScreen = $window.scrollTop();
+                        var $bottomOfScreen = $window.scrollTop() + $window.innerHeight();
+                        
+                        if(($bottomOfScreen > $bottomOfVideo) && ($topOfScreen < $topOfVideo)){
+                            $video[0].play();
+                            $video.attr("controls","");
+                        } else {
+                            $video[0].pause();
+                        }
+                        
+                    });
+                
+                });
 
-$(function() {
+                $(function() {
 
-  var $video = $('.vidos-3');
-  var $window = $(window);
+                var $video = $('.vidos-3');
+                var $window = $(window);
 
-  $window.scroll(function() {
+                $window.scroll(function() {
 
-    var $topOfVideo = $video.offset().top;
-    var $bottomOfVideo = $video.offset().top + $video.outerHeight();
+                    var $topOfVideo = $video.offset().top;
+                    var $bottomOfVideo = $video.offset().top + $video.outerHeight();
 
-    var $topOfScreen = $window.scrollTop();
-    var $bottomOfScreen = $window.scrollTop() + $window.innerHeight();
-    
-    if(($bottomOfScreen > $bottomOfVideo) && ($topOfScreen < $topOfVideo)){
-      $video[0].play();
-      $video.attr("controls","")[0].play();
-    } else {
-      $video[0].pause();
-    }
-    
-  });
-  
-});
+                    var $topOfScreen = $window.scrollTop();
+                    var $bottomOfScreen = $window.scrollTop() + $window.innerHeight();
+                    
+                    if(($bottomOfScreen > $bottomOfVideo) && ($topOfScreen < $topOfVideo)){
+                        $video[0].play();
+                        $video.attr("controls","");
+                    } else {
+                        $video[0].pause();
+                    }
+                    
+                });
+                
+                });
 
             new WOW().init();
         </script>
