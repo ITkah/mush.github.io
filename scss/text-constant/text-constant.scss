@@ -23,13 +23,15 @@
             display: inline-block;
             border-radius: 20px;
             padding: 0 20px;
+            @media (max-width: 576px) {
+                padding: 5px 15px;
+            }
         }
         @media (max-width: 1280px) {
             font: 2rem "Bold";
         }
         @media (max-width: 576px) {
             font: 1.25rem "Bold";
-            padding: 0 10px;
         }
     }
 }
@@ -154,6 +156,12 @@
     margin-bottom: 30px;
     @media (max-width: 576px) {
         margin-bottom: 20px;
+    }
+    a {
+        font: .7rem "Regular";
+        color: #5d5858;
+        text-decoration: underline;
+        z-index: 99;
     }
 }
 

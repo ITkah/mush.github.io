@@ -101,3 +101,66 @@
         }
     }
 }
+
+.zoom-anim-dialog {
+    max-width: 600px;
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px 50px;
+    margin: 0 auto;
+    @media (max-width: 990px) {
+        padding: 30px;
+    }
+    .forma_title {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #4a4949;
+        text-transform: uppercase;
+        font: 2rem "Bold";
+        @media (max-width: 576px) {
+            font: 1.5rem "Bold";
+        }
+    }
+    .form_btn_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .checkbox {
+        margin-bottom: 20px;
+    }
+}
+
+.my-mfp-zoom-in .zoom-anim-dialog {
+	opacity: 0;
+	transition: all 0.2s ease-in-out; 
+	transform: scale(0.8); 
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+	transform: scale(1); 
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+	transform: scale(0.8); 
+
+	opacity: 0;
+}
+
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg {
+	opacity: 0;
+	transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+	opacity: .8;
+}
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+	opacity: 0;
+}

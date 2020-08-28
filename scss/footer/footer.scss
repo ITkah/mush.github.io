@@ -13,7 +13,8 @@
     }
     @media (max-width: 576px) {
         padding: 10px 0;
-        grid-gap: 15px;
+        grid-gap: 25px;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -22,6 +23,10 @@
         grid-column-start: 1;
         grid-column-end: 3;
     }
+    @media (max-width: 576px) {
+        align-items: center;
+        justify-content: center;
+    }
     .logo_box {
         margin-bottom: 30px;
         @media (max-width: 768px) {
@@ -29,6 +34,15 @@
         }
         @media (max-width: 576px) {
             margin-bottom: 10px;
+            text-align: center;
+        }
+    }
+    .social_box {
+        @media (max-width: 576px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            left: 0;
         }
     }
 }
@@ -58,6 +72,9 @@
         margin-bottom: 15px;
         @media (max-width: 768px) {
             margin-bottom: 10px;
+        }
+        @media (max-width: 576px) {
+            text-align: center;
         }
     }
 }
@@ -118,6 +135,7 @@
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 3;
+        align-items: center;
     }
     .nav_title {
         margin-bottom: 15px;
@@ -138,6 +156,9 @@
         }
         @media (max-width: 760px) {
             align-items: flex-start;
+        }
+        @media (max-width: 576px) {
+            align-items: center;
         }
         li {
             margin-bottom: 10px;
@@ -170,7 +191,7 @@
     @media (max-width: 576px) {
         grid-column-start: 1;
         grid-column-end: 3;
-        align-items: flex-start;
+        align-items: center;
     }
     .feedback_title {
         font: 1rem "Bold";
@@ -187,5 +208,34 @@
     }
     a:last-child {
         margin: 0;
+    }
+}
+
+.thank-modal {
+    .forma_title {
+        margin: 0;
+    }
+}
+
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: 25px;
+    background: #d35134;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 50%;
+    text-decoration: none;
+    span {
+        position: relative;
+        top: -2px;
+        right: -1px;
     }
 }

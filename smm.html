@@ -126,7 +126,7 @@
                                     Оставьте заявку на бесплатную консультацию по стратегии 
                                     продвижения для Вашего бизнеса.
                                 </p>
-                                <a href="#" class="btn_dark">Оставить заявку</a>
+                                <a href="#forma" class="popup-with-zoom-anim btn_dark">Оставить заявку</a>
                                 <p class="main_preview">
                                     Проведем БЕСПЛАТНЫЙ SMM-аудит<br>
                                     и подберем оптимальный тариф
@@ -145,7 +145,7 @@
                             </div>
                             <div class="smm_example_wrap wow fadeInUp" data-wow-duration="0.85s" data-wow-delay="0.1s">
                                 <div class="smm_img">
-                                    <video poster="img/smm/smm-img.png" class="smm_img vidos" muted>
+                                    <video poster="img/smm/smm-img.png" class="smm_img vidos" playsinline autoplay loop muted>
                                         <source src="img/vidos.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                                     </video>
                                 </div>
@@ -252,7 +252,7 @@
                                 
                             </div>
                             <div class="smm_btn_wrap">
-                                <a href="#" class="btn_dark">Оставить заявку</a>
+                                <a href="#forma" class="popup-with-zoom-anim btn_dark">Оставить заявку</a>
                             </div>
                         </div>
                     </div>
@@ -345,7 +345,7 @@
                             <div class="home_feedback_wrap">
                                 <form class="home_feedback_form">
                                     <div class="input_box">
-                                        <input type="text" name="home_name" placeholder="Имя" maxlength="20" required>
+                                        <input type="text" name="home_name" class="name" placeholder="Имя" maxlength="20" required>
                                     </div>
                                     <div class="input_box">
                                         <input type="email" name="home_email" placeholder="Email" required>
@@ -478,6 +478,31 @@
                 </div>
             </footer>
         </div>
+
+        <div id="forma" class="zoom-anim-dialog mfp-hide">
+            <p class="forma_title">Оставить заявку</p>
+            <form class="home_feedback_form">
+                <div class="input_box">
+                    <input type="text" name="home_name" class="name" placeholder="Имя" maxlength="20" required>
+                </div>
+                <div class="input_box">
+                    <input type="email" name="home_email" placeholder="Email" required>
+                </div>
+                <div class="input_box">
+                    <input type="text" name="home_phone" class="phone" placeholder="Телефон" maxlength="25" required>
+                </div>
+                <div class="input_box">
+                    <textarea name="home_textarea" maxlength="1000" minlength="20" placeholder="Коротко о проекте (ссылка на сайт, соц сети и т.д.)"></textarea>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="politika" required>
+                    <label for="politika">Я согласен с Политикой обрботки данных</label>
+                </div>
+                <div class="form_btn_box">
+                    <button type="submit" class="btn_dark">Оставить заявку</button>
+                </div>
+            </form>    
+        </div>
         <script src="js/libs/jquery-3.5.1.min.js"></script>
         <script src="js/libs/magnific-popup.min.js"></script>
         <script src="js/libs/slick.min.js"></script>
@@ -496,6 +521,30 @@
 
                 fixedContentPos: false
             });
+            $(function() {
+
+            var $video = $('.vidos');
+            var $window = $(window);
+
+            $window.scroll(function() {
+
+                var $topOfVideo = $video.offset().top;
+                var $bottomOfVideo = $video.offset().top + $video.outerHeight();
+
+                var $topOfScreen = $window.scrollTop();
+                var $bottomOfScreen = $window.scrollTop() + $window.innerHeight();
+                
+                if(($bottomOfScreen > $bottomOfVideo) && ($topOfScreen < $topOfVideo)){
+                    $video[0].play();
+                } else {
+                    $video[0].pause();
+                }
+                
+            });
+
+            });
+
+
         </script>
     </body>
 </html>

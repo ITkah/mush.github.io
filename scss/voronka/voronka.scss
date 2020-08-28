@@ -46,7 +46,7 @@
     @media (max-width: 576px) {
         display: grid;
         grid-template-columns: 1fr;
-        grid-gap: 90px;
+        grid-gap: 110px;
     }
     .decision_stages_box:nth-child(2){
         position: relative;
@@ -149,8 +149,8 @@
             top: -40px;
         }
         @media (max-width: 576px) {
-            top: -20px;
-            left:50%;
+            top: -35px;
+            left: 50%;
             transform:translate(-50%, -50%);
         }
     }
@@ -297,6 +297,7 @@
                 }
                 span {
                     color: #e94a25;
+                    font-weight: bold;
                 }
             }
         }
@@ -322,7 +323,7 @@
     }
     .voronka_sale_box {
         position: relative;
-        span {
+        .dashboard {
             content: '';
             height: 95%;
             width: 95%;
@@ -360,6 +361,10 @@
             position: relative;
             @media (max-width: 800px) {
                 font: .95rem/21px "Regular";
+            }
+            span {
+                color: #e94a25;
+                font-weight: bold;
             }
         }
         .voronka_num {
@@ -591,6 +596,9 @@
         padding: 80px 0;
         position: relative;
         @media (max-width: 990px) {
+            padding: 40px 15px;
+        }
+        @media (max-width: 576px) {
             padding: 40px 0;
         }
         &::before {
